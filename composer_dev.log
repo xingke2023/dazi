@@ -1,0 +1,40 @@
+> Composer\Config::disableProcessTimeout
+> npx concurrently -c "#93c5fd,#c4b5fd,#fb7185,#fdba74" "php artisan serve --host=0.0.0.0 --port=8002" "php artisan queue:listen --tries=1" "php artisan pail --timeout=0" "npm run dev" --names=server,queue,logs,vite --kill-others
+[queue] 
+[queue]    INFO  Processing jobs from the [default] queue.  
+[queue] 
+[logs] 
+[logs]    INFO  Tailing application logs.                        Press Ctrl+C to exit  
+[logs]                                                Use -v|-vv to show more details  
+[vite] 
+[vite] > dev
+[vite] > vite
+[vite] 
+[server] 
+[server]    INFO  Server running on [http://0.0.0.0:8002].  
+[server] 
+[server]   Press Ctrl+C to stop the server
+[server] 
+[vite] 
+[vite]   VITE v6.2.0  ready in 973 ms
+[vite] 
+[vite]   ➜  Local:   http://localhost:5173/
+[vite]   ➜  Network: http://10.2.0.13:5173/
+[vite]   ➜  Network: http://172.17.0.1:5173/
+[vite] 
+[vite]   LARAVEL v12.20.0  plugin v1.2.0
+[vite] 
+[vite]   ➜  APP_URL: https://dazi.xingke888.com
+[server]   2025-07-18 16:54:58 /dashboard ................................... ~ 0.14ms
+[server]   2025-07-18 16:55:05 /dashboard ................................... ~ 0.10ms
+[vite] 17:26:12 [vite] vite.config.ts changed, restarting server...
+[vite] 17:26:12 [vite] server restarted.
+[vite] 
+[vite]   ➜  Local:   https://localhost:5173/
+[vite]   ➜  Network: https://10.2.0.13:5173/
+[vite]   ➜  Network: https://172.17.0.1:5173/
+[vite] 
+[vite]   LARAVEL v12.20.0  plugin v1.2.0
+[vite] 
+[vite]   ➜  APP_URL: https://dazi.xingke888.com
+Script npx concurrently -c "#93c5fd,#c4b5fd,#fb7185,#fdba74" "php artisan serve --host=0.0.0.0 --port=8002" "php artisan queue:listen --tries=1" "php artisan pail --timeout=0" "npm run dev" --names=server,queue,logs,vite --kill-others handling the dev event returned with error code 143
